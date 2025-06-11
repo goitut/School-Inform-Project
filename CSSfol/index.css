@@ -1,0 +1,33 @@
+body {
+  background-image: url(/Assets/pexels-enginakyurt-2946979.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain;
+  background-position: center; */
+}
+
+
+
+h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: #9e5050;
+  text-shadow: black 2px 2px;
+  transition: ease 1s;
+}
+
+h3:hover {
+  color: aqua;
+}
+
+p {
+  margin-top: 20%;
+  text-align: center;
+  color: #9e5050
+}
+
+ul {
+  list-style: none;
+}
+

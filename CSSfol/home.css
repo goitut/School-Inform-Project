@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ .navabr {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
+ }
+nav {
+  height: 80px;
+  background: #9410106c;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #941010;
+  transition: .3s;
+}
+
+.body {
+  display: flex;
+}
+
+.learn {
+  background-color: red;
+  color: white;
+  border: none;
+  height: 36px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* margin-left: 70%; */
+  transition: ease-out 1s;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.buttons {
+  display: flex;
+}
