@@ -27,6 +27,11 @@ p {
   color: #9e5050
 }
 
+
+p:hover {
+  color: aqua;
+}
+
 ul {
   list-style: none;
 }
