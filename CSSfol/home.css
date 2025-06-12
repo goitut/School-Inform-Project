@@ -6,7 +6,7 @@
  .navabr {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
+  background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
  }
 nav {
   height: 80px;
@@ -19,6 +19,7 @@ nav {
   padding: 0 20px;
   margin-bottom: 20px;
 }
+
 
 .logo {
   color: white;
@@ -65,4 +66,18 @@ button:hover {
 
 .buttons {
   display: flex;
+}
+
+.our, .all, .contact {
+  height: 46px;
+  width: 120px;
+  color: white;
+}
+ 
+.our {
+  background-color: #941010;
+}
+
+.all {
+  background-color: #10942d;
 }
