@@ -42,12 +42,13 @@ ul {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  display: flex;
 }
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: flex;
-}
+} */
 
 .img1, .img2, .img3 {
   height: 100px;
@@ -127,4 +128,5 @@ ul {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 
