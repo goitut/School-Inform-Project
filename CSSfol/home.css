@@ -3,11 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
- .navabr {
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: large;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.navabr {
   height: 100vh;
   width: 100%;
-  background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
- }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
+}
+
 nav {
   height: 80px;
   background: #9410106c;
@@ -47,44 +69,94 @@ nav ul li a:hover {
 
 .body {
   display: flex;
+  background-color: whitesmoke;
+}
+
+.image {
+  width: 30%;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 5%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #941010; */
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #941010;
+  text-align: right;
+  margin-right: 70px;
+}
+
+p {
+    margin-left: 300px;
 }
 
 .learn {
-  background-color: red;
-  color: white;
+  background-color: #e3f0e3;
+  color: black;
   border: none;
   height: 36px;
   padding: 10px 20px;
   cursor: pointer;
-  /* margin-left: 70%; */
+  margin-top: 30px;
   transition: ease-out 1s;
+   margin-left: 400px;
 }
 
-button:hover {
-  background-color: blue;
+.learn:hover {
+  background-color: #9410106c;
 }
 
 .buttons {
   display: flex;
+  gap: 15px;
 }
 
-.our, .all, .contact {
-  height: 46px;
-  width: 120px;
-  color: white;
+.register {
+  height: 40px;
+  width: 100px;
+  color: black;
+  background-color: #e3f0e3;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+    transition: ease-out 1s;
 }
- 
-.our {
+
+.register:hover {
   background-color: #941010;
 }
 
-.all {
-  background-color: #10942d;
+.our,
+.all,
+.contact {
+  height: 46px;
+  width: 180px;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  margin-left: 85%;
+  background-color: #e3f0e3;
+  border: none;
+  border-radius: 2px;
 }
 
-@media screen and (max-width: 600px) {
-  .img, .logo {
-    width: 100%;
-    margin-top: 0;
-  }
+
+.our:hover,
+.all:hover,
+.contact:hover {
+  background-color: #9410106c;
 }
