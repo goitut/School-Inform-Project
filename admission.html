@@ -8,6 +8,7 @@
 
   <title>Admission</title>
   <link rel="stylesheet" href="CSSfol/admission.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <li><a href="">Staff</a></li>
         <li><a href="">Fees Structure</a></li>
       </ul>
-      <button>Register Now</button>
+      <button class="register">Register Now</button>
     </nav>
 
   <div class="container">
@@ -44,13 +45,23 @@
     </div>
     <div class="row">
       <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
         <label for="country">Country</label>
       </div>
       <div class="col-75">
         <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+          <option value="australia">-select country</option>
+          <option value="canada">Kenya</option>
+          <option value="usa">South Sudan</option>
+           <option value="canada">Uganda</option>
+          <option value="usa">Rwanda</option>
         </select>
       </div>
     </div>
