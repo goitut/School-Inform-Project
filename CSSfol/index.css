@@ -1,39 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(/Assets/pexels-enginakyurt-2946979.jpg);
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: contain;
-  background-position: center; */
-  background-color:rgba(255, 255, 255, 0.9);
+  background-size: 100%;
+  font-size: large;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.navabr {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) url(/Assets/pexels-adrien-olichon-1257089-32224803.jpg));
+}
+
+nav {
+  height: 80px;
+  background: #9410106c;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 
-
-h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
-  font-size: 50px;
-  margin: 60px;
-  color: aqua;
-  text-shadow: black 2px 2px;
-  transition: ease 1s;
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -5px;
 }
 
-h3:hover {
-  color: #9e5050;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #941010;
+  transition: .3s;
+}
+
+.body {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.image {
+  width: 30%;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 5%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #941010; */
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #941010;
+  text-align: right;
+  margin-right: 70px;
 }
 
 p {
-  margin-top: 20%;
+    margin-left: 300px;
+}
+
+.learn {
+  background-color: #e3f0e3;
+  color: black;
+  border: none;
+  height: 36px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: ease-out 1s;
+   margin-left: 400px;
+}
+
+.learn:hover {
+  background-color: #9410106c;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.register {
+  height: 40px;
+  width: 100px;
+  color: black;
+  background-color: #e3f0e3;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+    transition: ease-out 1s;
+}
+
+.register:hover {
+  background-color: #941010;
+}
+
+.our,
+.all,
+.contact {
+  height: 46px;
+  width: 180px;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  margin-left: 85%;
+  background-color: #e3f0e3;
+  border: none;
+  border-radius: 2px;
+}
+
+
+.our:hover,
+.all:hover,
+.contact:hover {
+  background-color: #9410106c;
+}
+
+footer {
+  background-color: #111;
+}
+
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+/* what happens when hover over social icons */
+
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+
+/* styling footer navbar */
+
+.footerNav {
+  margin: 30px 0;
+} 
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none disc;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* what happens when hover over footer navbar */
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerButtom {
+  background-color: #111;
+  padding: 20px;
   text-align: center;
-  color: #9e5050
 }
 
-
-p:hover {
-  color: aqua;
+.footerButtom p {
+  color: white;
 }
 
-ul {
-  list-style: none;
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+@media (max-width) {
+  .footerNav ul li a {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
 }
